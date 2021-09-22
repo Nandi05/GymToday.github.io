@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoFit</title>
+    <link rel="stylesheet" href="gym.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+</head>
+<style>
+    
+    .header{
+        height: 100px;
+    }
+    body{
+        margin:0px;
+        padding: 0px;
+        background: url("gym1.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height:700px;
+
+    }
+    .left{
+        /* border: 2px solid red; */
+        display: inline-block;
+        position: absolute;
+        top: 10px;
+        left: 34px;
+        
+        
+    }
+    .mid{
+        /* border: 2px solid red; */
+        display: block;
+        width: 40%;
+        height: 40px;
+        margin: 18px  auto; /*auto is used to center a thing */
+
+    }
+    .right{
+        /* border: 2px solid red; */
+        display: inline-block;
+        position: absolute;
+        right:34px;
+        top:18px;
+    }
+    .navbar{
+        display: inline-block;
+        font-family: 'Mate SC', serif;
+        
+    }
+    .navbar li{
+        display: inline-block;
+        list-style: none;
+        font-size: 20px;
+    }
+    .navbar li a{
+        color: white;
+        text-decoration: none;
+        padding: 12px 12px;
+        
+    }
+    .navbar li a:hover {
+        color: black;
+        text-decoration: underline;
+
+    }
+
+    #logo{
+        height: 65px;
+        width: 110px;
+        
+        
+    }
+    .btn{
+        padding: 10px;
+        border:2px solid white;
+        border-radius: 10px;
+        font-size: 13px;
+        text-decoration: underline;
+        cursor: pointer;
+        margin: 5px;
+        font-family: 'Mate SC', serif;
+        color: black;
+        width: 90px;
+    }
+    .btn:hover{
+        background-color: grey;
+    }
+    .container{
+        border: 4px solid white; 
+        width:40%;
+        padding: 40px 40px;
+        margin-left: 56px;
+        margin-top: 33px;
+        border-radius: 50px;
+        font-family:'Mate SC', serif;
+        
+        
+        
+    }
+    .input{
+        display: block;
+        cursor: cl ;
+    }
+    .radio{
+        display: block;
+    }
+    #heading{
+        color:black;
+    }
+    .radio{
+        color: white;
+    }
+    
+</style>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="logo.png" alt="The picture is unable to load" id="logo">
+            <font color="white"><center>GoFit!</center></font>
+        </div>
+        <!-- mid box for navigation bar -->
+        <div class="mid">   
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness  calc</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <!-- right box for search bar -->
+        <div class="right">
+            <button class="btn">Call us</button><button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h3 id="heading">JOIN THE BEST GYM OF THE TOWN!!</h3>
+        <form action="noaction.php">
+            <input type="text" class="input" placeholder="First name"><br>
+            <input type="text" placeholder="Last name" class="input"><br>
+            <input type="text" placeholder="Email Address" class="input"><br>
+            Select your preferred membership:
+            <label class="radio"><input type="radio" value="A" name="membership">Premium</label>
+            <label class="radio"><input type="radio" value="b" name="membership">Gold</label>
+            <label class="radio"><input type="radio" value="c" name="membership">Diamond</label><br>
+            <input type="button" class="btn" value="Submit">
+
+        </form>
+    </div>
+</body>
+</html>
